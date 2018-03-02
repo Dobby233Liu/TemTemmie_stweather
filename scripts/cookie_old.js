@@ -22,13 +22,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    var user=getCookie("username");
+    var user=document.cookie.replace(/(?:(?:^|.*;\s*)username\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     if (user != "") {
         alert("welcome to stweather " + user);
     } else {
        user = prompt("welcome to stweather. enter your username","");
        if (user != "" && user != null) {
-           setCookie("username", user, 30);
+           document.cookie="username="+user;
        }
     }
 }
