@@ -1,3 +1,0 @@
-# stweather
-static weather 
-
