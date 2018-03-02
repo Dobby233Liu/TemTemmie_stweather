@@ -1,6 +1,6 @@
 
-
-
+try{
+if (typeof(Storage) !== "undefined") {
     var user=localStorage.getItem("username");
     if (user != "") {
         alert("welcome to stweather " + user);
@@ -10,5 +10,5 @@
            localStorage.setItem("username",user)
        }
     }
-
+}else{alert("error")}}catch(e){alert(e)}
 
