@@ -2,7 +2,7 @@
 try{
 if (typeof(Storage) !== "undefined") {
     var user=localStorage.getItem("username");
-    if (user != "") {
+    if (user != ""||user!=null) {
         alert("welcome to stweather " + user);
     } else {
        user = prompt("welcome to stweather. enter your username");
