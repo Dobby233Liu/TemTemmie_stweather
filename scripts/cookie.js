@@ -7,8 +7,8 @@ if (typeof(Storage) !== "undefined") {
         user = prompt("welcome to stweather. enter your username");
        if (user != ""||user != null) {
            localStorage.setItem("username",user)
-       }else{throw new Error("empty user name")}}else{
-  alert("welcome to stweather "+user);}
+       }else{throw new Error("empty user name")}
+  alert("welcome to stweather "+user);
   
 }else{throw new Error("localStorage not supported")}}catch(e){alert(e)}
 
